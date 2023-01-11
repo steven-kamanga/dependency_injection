@@ -1,5 +1,5 @@
-import 'package:dependency_injection/app_info.dart';
-import 'package:dependency_injection/inherited_injection.dart';
+import 'app_info.dart';
+import 'inherited_injection.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {

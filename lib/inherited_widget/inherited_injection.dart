@@ -1,4 +1,4 @@
-import 'package:dependency_injection/app_info.dart';
+import 'app_info.dart';
 import 'package:flutter/material.dart';
 
 class InheritedInjection extends InheritedWidget {
