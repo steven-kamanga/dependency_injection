@@ -1,4 +1,5 @@
 import 'package:dependency_injection/home_view.dart';
+import 'package:dependency_injection/inherited_injection.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,13 +12,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        body: HomeView(),
+    return InheritedInjection(
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Scaffold(
+          body: HomeView(null),
+        ),
       ),
     );
   }
